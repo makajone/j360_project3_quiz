@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+html {background-color: white;}
+/* CSS Document */
+body {
+	font-family: 'Raleway', sans-serif; 
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif; 
+	color: #f56b6b;
+	margin-top: 10px;
+	font-size: 28px;
+}
+
+ul li {
+	font-family: 'Raleway', sans-serif; 
+	margin-top: 2pt;
+	list-style-type: none;
+	}
+	
+#questions {
+	padding: 10px;
+	margin-top: 50px;
+	font-size: 18px;
+}

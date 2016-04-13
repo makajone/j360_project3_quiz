@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> j360 Javascript Quiz </title>
+<link rel="stylesheet"  type="text/css" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="quiz.js"></script>
+</head>
+
+<body>
+<div class="questions">
+
+<h1> j360 - Multi-Choice Quiz </h1>
+
+<form name="quiz">
+
+<h3> 1. What is a string in Python? </h3>
+<ul>
+  <li><input type="radio" name="q1" value="parenthesis"> A sequence of characters in parenthesis - e.g. (I love Python)</li>
+  <li><input type="radio" name="q1" value="quotes"> A sequence of characters in quotes - e.g. 'I love Python'</li>
+  <li><input type="radio" name="q1" value="brackets"> A sequence of characters in brackets - e.g. [I love Python]</li>
+</ul>
+
+<h3> 2. What is a Boolean Value in Python </h3>
+<ul>
+  <li><input type="radio" name="q2" value="variable_name"> A name for a piece of information (e.g thing = 1)</li>
+  <li><input type="radio" name="q2" value="argument"> A value passed into a function to work with throughout the code</li>
+  <li><input type="radio" name="q2" value="true/false">An expression that could resolve to either True or False</li>
+</ul>
+
+<h3> 3. What does the len() function do in Python? </h3>
+<ul>
+  <li><input type="radio" name="q3" value="float">It cuts the decimal points off a number and rounds to the nearest whole number</li>
+  <li><input type="radio" name="q3" value="range">It iterates through a range of numbers that you specify (e.g. len(1,5))</li>
+  <li><input type="radio" name="q3" value="len">It returns the length (the number of items) of an object such as a dictionary, range, list, etc. </li>
+</ul>
+
+<h3> 4. What is the purpose of the ** operator in Python? </h3>
+<ul>
+  <li><input type="radio" name="q4" value="exponentiation">It is the notation for exponentiation</li>
+  <li><input type="radio" name="q4" value="multiplication">It is the notation for multiplication</li>
+  <li><input type="radio" name="q4" value="select">It is the notation for selecting all content from an object</li>
+</ul>
+
+<h3> 5. How do you make a piece of code visible to the user when the code is run? </h3>
+<ul>
+  <li><input type="radio" name="q5" value="print">You use a print statement to make it read out (e.g. print("Welcome to i210")</li>
+  <li><input type="radio" name="q5" value="show">You use the show() function (e.g. show("Welcome to i210") )</li>
+  <li><input type="radio" name="q5" value="display">You use the display* notation (e.g. display*"Welcome to i210")</li>
+</ul>
+</div>
+
+<input type="button" value="Get score" onClick="jsQuiz(this.form)">
+<input type="reset" value="Clear answers">
+Score = <strong><input name="percentage" disabled></strong><br><br>
+Correct answers:<br>
+<textarea name="solutions" rows="4" cols="30" disabled>
+</textarea>
+</form>
+
+</body>
+</html>
